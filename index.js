@@ -22,12 +22,12 @@ res.send('Dirty Code 12')
 
 
 app.get('/Contact', function (req, res) { 
-res.send('Contact kharroubi Taha taha.kharroubii@outlook.com')
+res.send('Contact Ensta Team')
 })
 
 app.get('/webhook/', function (req, res)
  { 
-  if (req.query['hub.verify_token'] === 'taha') {  res.send(req.query['hub.challenge']) } else {  res.send('Error, wrong token') }})
+  if (req.query['hub.verify_token'] === 'takoua') {  res.send(req.query['hub.challenge']) } else {  res.send('Error, wrong token') }})
 
 app.listen(app.get('port'), function() { 
 console.log('running on port', app.get('port'))
