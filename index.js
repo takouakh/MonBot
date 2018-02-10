@@ -22,7 +22,7 @@ res.send('Dirty Code 12')
 
 
 app.get('/Contact', function (req, res) { 
-res.send('Contact Ensta Team')
+res.send('Contact Enstab Team')
 })
 
 app.get('/webhook/', function (req, res)
@@ -122,7 +122,7 @@ function SendMessage(sender_psid, response) {
 
 function getAiml(request) {
   let  roboResponse='Hi' ;
-  var aimlInterpreter = new AIMLInterpreter({name:'taha', age:'1 month', ufirst: 'Takoua', ulast: 'Kharroubi', gender: 'Female'});
+  var aimlInterpreter = new AIMLInterpreter({name:'Enstab Bot', age:'1 month', ufirst: 'Takoua', ulast: 'Kharroubi', gender: 'Female'});
   aimlInterpreter.loadAIMLFilesIntoArray(["responses/bot.aiml"]);
   aimlInterpreter.findAnswerInLoadedAIMLFiles(request.toUpperCase(), function(answer, wildCardArray, input){
     if(answer){
